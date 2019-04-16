@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{28E5F5F1-0F4D-4D57-BDB1-BBF70EB4E5FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{03E5000C-59EE-454F-8254-4DEED98C1160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortumApp", "src\FortumApp\FortumApp.csproj", "{0A75850B-03AF-463B-8C86-CDE534A11BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortumAppTests", "test\FortumAppTests\FortumAppTests.csproj", "{E3265D38-0AA9-4DFF-9D8C-563900004791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A75850B-03AF-463B-8C86-CDE534A11BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A75850B-03AF-463B-8C86-CDE534A11BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A75850B-03AF-463B-8C86-CDE534A11BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A75850B-03AF-463B-8C86-CDE534A11BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3265D38-0AA9-4DFF-9D8C-563900004791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3265D38-0AA9-4DFF-9D8C-563900004791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3265D38-0AA9-4DFF-9D8C-563900004791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3265D38-0AA9-4DFF-9D8C-563900004791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A75850B-03AF-463B-8C86-CDE534A11BBA} = {28E5F5F1-0F4D-4D57-BDB1-BBF70EB4E5FD}
+		{E3265D38-0AA9-4DFF-9D8C-563900004791} = {03E5000C-59EE-454F-8254-4DEED98C1160}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {391BC532-B000-4312-9620-36F891C366A7}
+	EndGlobalSection
+EndGlobal

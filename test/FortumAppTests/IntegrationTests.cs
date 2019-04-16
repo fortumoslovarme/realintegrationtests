@@ -12,7 +12,7 @@ namespace FortumAppTests
     public class IntegrationTests
     {
         [Fact]
-        public async void DotNetRun_ExecuteCommandFromSourceCodeAssembly_SetsNumberToOne()
+        public async void DotNetRun_ExecuteCommandFromSourceCodeAssembly_WritesExpectedFileWithText()
         {
             // Arrange
             var expectedFilePath = Path.Combine(Path.GetTempPath(), "fortumfile.txt");

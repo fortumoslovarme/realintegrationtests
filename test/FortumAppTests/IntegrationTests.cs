@@ -37,7 +37,7 @@ namespace FortumAppTests
                 dotnetRunTask = Task.Run(() => process.DotNetRun<Program>(), cancellationToken);
 
                 string fileContent;
-                while ((fileContent = await GetFileContent(expectedFilePath, cancellationToken)) == null)
+                while ((fileContent = await GetFileContent(expectedFilePath, cancellationToken)) is null)
                 {
                     await Task.Delay(millisecondsDelay: 100, cancellationToken: cancellationToken);
 
@@ -75,17 +75,17 @@ namespace FortumAppTests
             }
         }
 
-        private static void DeleteFileIfExists(string expectedFilePath)
+        private static void DeleteFileIfExists(string filePath)
         {
-            if (File.Exists(expectedFilePath))
+            if (File.Exists(filePath))
             {
-                File.Delete(expectedFilePath);
+                File.Delete(filePath);
             }
 
-            if (File.Exists(expectedFilePath))
+            if (File.Exists(filePath))
             {
                 throw new Exception(
-                    "The expected file output from the test exists before the production code has been called.");
+                    "The file still exists after trying to delete it.");
             }
         }
 
